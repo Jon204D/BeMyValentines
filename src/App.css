@@ -1,0 +1,115 @@
+:root {
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.overlay img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center 0%;
+  margin-top: -150px;
+  border-radius: 15px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header h2 {
+  margin: 10px 0 0 0;
+  font-size: 1.8em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.yesButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.yesButton:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.noButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.noButton:hover {
+  background-color: #da190b;
+  transform: scale(1.05);
+}
+
+.noButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.fade-in {
+  animation: fadeIn 400ms ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.glass {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 18px 24px;
+  margin-top: 10px;
+}
+
+.sweet-line {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
