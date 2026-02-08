@@ -113,3 +113,60 @@
   font-size: 1.05rem;
   opacity: 0.95;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .overlay {
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .overlay img {
+    width: min(350px, 85vw);
+    height: min(350px, 85vw);
+    margin-top: -80px;
+  }
+
+  .header h1 {
+    font-size: clamp(1.8em, 8vw, 3.2em);
+  }
+
+  .header h2 {
+    font-size: clamp(1.2em, 5vw, 1.8em);
+    padding: 0 10px;
+  }
+
+  .buttons {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .yesButton,
+  .noButton {
+    padding: 10px 25px;
+    font-size: 1em;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay img {
+    width: min(280px, 80vw);
+    height: min(280px, 80vw);
+    margin-top: -50px;
+  }
+
+  .header h1 {
+    font-size: clamp(1.5em, 7vw, 2.5em);
+  }
+
+  .header h2 {
+    font-size: clamp(1em, 4.5vw, 1.5em);
+  }
+
+  .yesButton,
+  .noButton {
+    padding: 8px 20px;
+    font-size: 0.95em;
+  }
+}
